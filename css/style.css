@@ -167,7 +167,38 @@ img {
 }
 
 .nav-item {
+  margin-left: 20px;
+}
+
+.lang-switch {
   margin-left: 30px;
+}
+
+.lang-switch a {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.lang-switch a:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.navbar .container {
+  align-items: center;
+}
+
+.lang-switch i {
+  font-size: 20px;
+}
+
+.lang-switch a::after {
+  display: none;
 }
 
 .nav-link {
@@ -185,7 +216,7 @@ img {
 }
 
 .nav-link:hover {
-  background-color: rgba(67, 97, 238, 0.2);
+  background-color: transparent;
 }
 
 .nav-link::after {
@@ -223,8 +254,9 @@ img {
 
 /* 首页横幅 - 现代几何设计 */
 .hero {
-  height: 80vh;
-  min-height: 600px;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(135deg, #E3F6FF 0%, #FFEEF8 100%);
   color: #333;
   display: flex;
@@ -232,6 +264,7 @@ img {
   text-align: center;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .hero::before {
@@ -242,17 +275,27 @@ img {
   width: 100%;
   height: 100%;
   background: 
-    /* 蓝色几何元素 */
-    linear-gradient(45deg, transparent 65%, rgba(52, 152, 219, 0.05) 65%, rgba(52, 152, 219, 0.05) 70%, transparent 70%),
-    linear-gradient(-45deg, transparent 65%, rgba(52, 152, 219, 0.05) 65%, rgba(52, 152, 219, 0.05) 70%, transparent 70%),
-    /* 紫色几何元素 */
-    linear-gradient(135deg, transparent 65%, rgba(155, 89, 182, 0.05) 65%, rgba(155, 89, 182, 0.05) 70%, transparent 70%),
-    linear-gradient(-135deg, transparent 65%, rgba(155, 89, 182, 0.05) 65%, rgba(155, 89, 182, 0.05) 70%, transparent 70%),
-    /* 背景底色 */
-    linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-  background-size: 100px 100px;
+    /* 清晰细线条 */
+    linear-gradient(75deg, transparent calc(50% - 0.5px), rgba(52, 152, 219, 0.15) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(15deg, transparent calc(50% - 0.5px), rgba(155, 89, 182, 0.15) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(105deg, transparent calc(50% - 0.5px), rgba(76, 175, 80, 0.15) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(45deg, transparent calc(50% - 0.5px), rgba(255, 152, 0, 0.15) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(135deg, transparent calc(50% - 0.5px), rgba(233, 30, 99, 0.15) 50%, transparent calc(50% + 0.5px)),
+    /* 纯色背景 */
+    #f5f7fa;
+  background-size: 200px 200px;
   z-index: 1;
   opacity: 1;
+  animation: bgMove 80s infinite linear;
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0 0, 20px 40px, 40px 80px, 60px 120px, 80px 160px;
+  }
+  100% {
+    background-position: 1000px 1000px, 1020px 1040px, 1040px 1080px, 1060px 1120px, 1080px 1160px;
+  }
 }
 
 .hero-content {
@@ -452,7 +495,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../images/tech-pattern.png');
   opacity: 0.05;
   z-index: 0;
 }
@@ -461,11 +503,55 @@ img {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, 80px);
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 5%;
+}
+
+@media (min-width: 1600px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 80px);
+  }
+}
+
+@media (max-width: 1600px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 80px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 70px);
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 70px);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 60px);
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
+}
+
+@media (max-width: 400px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, 50px);
+  }
 }
 
 .tech-icon {
@@ -762,15 +848,17 @@ img {
   .section {
     padding: 60px 0;
   }
-  
-  .tech-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
   }
   
   .hamburger.active .bar:nth-child(2) {
