@@ -1,0 +1,27 @@
+# 忽略所有以.开头的文件和文件夹
+.*
+!.gitignore
+
+# 忽略常见的临时文件
+*.log
+*.tmp
+*.temp
+
+# 忽略编辑器生成的文件
+*.swp
+*.swo
+*~
+
+# 忽略操作系统生成的文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 忽略依赖目录
+node_modules/
+vendor/
+
+# 忽略构建输出
+dist/
+build/
+out/
