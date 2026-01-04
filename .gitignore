@@ -1,27 +1,113 @@
-# 忽略所有以.开头的文件和文件夹
-.*
-!.gitignore
-
-# 忽略常见的临时文件
+# Logs
+logs
 *.log
-*.tmp
-*.temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# 忽略编辑器生成的文件
+# Dependencies
+node_modules/
+bun.lockb
+.bunpmrc
+
+# Production builds
+/build
+/.vite
+/.nuxt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Editor files
 *.swp
 *.swo
 *~
 
-# 忽略操作系统生成的文件
-Thumbs.db
-desktop.ini
+# Browsers
+*.tmp
+*.bak
+*.swp
+
+# Coverage
+coverage/
+.nyc_output
+
+# Testing
+junit.xml
+coverage.xml
+
+# Local development
+.local
+
+# Browser extensions
+*.crx
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~.nib
+
+# Emacs
+*- [0-9]*
+*.#*
+.#*
+*.elc
+auto-save-list
+tramp
+.\#*
+*.org-id-locations
+.org-id-locations
+.emacs.desktop
+.emacs.desktop.lock
+buffer\ * .el
+doom-*.el
+
+# VS Code
+.history
+.venv
+
+# System
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# 忽略依赖目录
-node_modules/
-vendor/
+*.tsbuildinfo
 
-# 忽略构建输出
-dist/
-build/
-out/
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
