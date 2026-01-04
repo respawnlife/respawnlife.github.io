@@ -1,0 +1,114 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+bun.lockb
+.bunpmrc
+
+# Production builds
+/build
+/dist
+/.vite
+/.nuxt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Browsers
+*.tmp
+*.bak
+*.swp
+
+# Coverage
+coverage/
+.nyc_output
+
+# Testing
+junit.xml
+coverage.xml
+
+# Local development
+.local
+
+# Browser extensions
+*.crx
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~.nib
+
+# Emacs
+*- [0-9]*
+*.#*
+.#*
+*.elc
+auto-save-list
+tramp
+.\#*
+*.org-id-locations
+.org-id-locations
+.emacs.desktop
+.emacs.desktop.lock
+buffer\ * .el
+doom-*.el
+
+# VS Code
+.history
+.venv
+
+# System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/

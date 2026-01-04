@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#f0f9ff"/>
+  <rect x="50" y="50" width="500" height="300" rx="0" fill="#e0f2fe" stroke="#4f46e5" stroke-width="4"/>
+  <circle cx="150" cy="150" r="40" fill="#c7d2fe"/>
+  <circle cx="300" cy="200" r="60" fill="#a5b4fc"/>
+  <circle cx="450" cy="150" r="40" fill="#818cf8"/>
+  <path d="M150,150 L300,200 L450,150" stroke="#4f46e5" stroke-width="4" fill="none"/>
+  <text x="300" y="320" text-anchor="middle" font-family="Arial" font-size="24" fill="#1e293b">AI Analytics Platform</text>
+</svg>
