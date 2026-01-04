@@ -17,4 +17,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    outDir: 'docs', // 修改打包输出目录为docs
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name].[hash].js`,
+        chunkFileNames: `assets/[name].[hash].js`,
+        assetFileNames: `assets/[name].[hash].[ext]`
+      }
+    }
+  }
 })
