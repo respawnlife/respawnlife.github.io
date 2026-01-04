@@ -22,7 +22,7 @@
         <div class="footer-section">
           <h4>{{ $t('footer.contact') }}</h4>
           <ul class="footer-links">
-            <li><a href="mailto:snowcatvanessa@gmail.com">snowcatvanessa@gmail.com</a></li>
+            <li><a href="mailto:contact@respawnlife.com">contact@respawnlife.com</a></li>
           </ul>
         </div>
       </div>

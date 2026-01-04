@@ -5,8 +5,8 @@
         <h2>{{ $t('contact.title') }}</h2>
         <p>{{ $t('contact.description') }}</p>
         <div class="contact-buttons">
-          <a href="mailto:snowcatvanessa@gmail.com" class="btn">{{ $t('contact.button') }}</a>
-          <p class="email-text">{{ $t('contact.email') }}: <a href="mailto:snowcatvanessa@gmail.com">snowcatvanessa@gmail.com</a></p>
+          <a href="mailto:contact@respawnlife.com" class="btn">{{ $t('contact.button') }}</a>
+          <p class="email-text">{{ $t('contact.email') }}: <a href="mailto:contact@respawnlife.com">contact@respawnlife.com</a></p>
         </div>
       </div>
     </div>
