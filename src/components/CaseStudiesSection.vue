@@ -38,10 +38,12 @@
   gap: 30px;
   justify-content: space-between;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .case-card {
   flex: 1;
+  min-width: 250px;
   padding: 30px;
   background: white;
   border-radius: 0;
@@ -71,9 +73,21 @@
   align-self: center;
 }
 
+@media (max-width: 1024px) {
+  .case-card {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .cases-container {
     flex-direction: column;
+  }
+  
+  .case-card {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
   
   .case-card h3 {

@@ -20,6 +20,13 @@
         </div>
         
         <div class="footer-section">
+          <h4>{{ $t('footer.links') }}</h4>
+          <ul class="footer-links">
+            <li><a href="https://stocks.respawnlife.com" target="_blank" rel="noopener noreferrer">{{ $t('cases.stocks.title') }}</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
           <h4>{{ $t('footer.contact') }}</h4>
           <ul class="footer-links">
             <li><a href="mailto:contact@respawnlife.com">contact@respawnlife.com</a></li>

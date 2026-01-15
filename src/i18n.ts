@@ -71,6 +71,10 @@ const messages = {
       title: 'Case Studies',
       description: 'Explore our successful projects and solutions',
       contactButton: 'Contact Us',
+      stocks: {
+        title: 'Respawn Stocks',
+        description: 'A professional stock monitoring tool that provides real-time market data, advanced charting capabilities, and intelligent alerts to help investors make informed trading decisions.'
+      },
       ai: {
         title: 'AI-Powered Analytics Platform',
         description: 'A comprehensive AI analytics platform that helps businesses make data-driven decisions. The platform processes large volumes of data in real-time and provides actionable insights through intuitive visualizations.'
@@ -103,6 +107,7 @@ const messages = {
     footer: {
       description: 'We are a passionate team providing high-quality custom software solutions, combining cutting-edge technologies to help clients achieve digital transformation.',
       navigation: 'Navigation',
+      links: 'Links',
       contact: 'Contact',
       rights: 'All rights reserved.'
     }
@@ -177,6 +182,10 @@ const messages = {
       title: '案例研究',
       description: '探索我们成功的项目和解决方案',
       contactButton: '联系我们',
+      stocks: {
+        title: '盯盘工具',
+        description: '专业的股票盯盘工具，提供实时市场数据、高级图表功能和智能提醒，帮助投资者做出明智的交易决策。'
+      },
       ai: {
         title: 'AI驱动分析平台',
         description: '一个综合的AI分析平台，帮助企业做出数据驱动的决策。该平台实时处理大量数据，并通过直观的可视化界面提供可操作的见解。'
@@ -209,6 +218,7 @@ const messages = {
     footer: {
       description: '我们是一个充满热情的团队，提供高质量的定制软件解决方案，结合前沿技术帮助客户实现数字化转型。',
       navigation: '导航',
+      links: '链接',
       contact: '联系',
       rights: '版权所有。'
     }

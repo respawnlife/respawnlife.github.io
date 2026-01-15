@@ -39,7 +39,7 @@ const scrollToSection = (sectionId: string) => {
     <TeamSection />
     <CaseStudiesSection />
     <ContactSection @scroll-to-section="scrollToSection" />
-    <Footer />
+    <Footer @scroll-to-section="scrollToSection" />
   </div>
 </template>
 
